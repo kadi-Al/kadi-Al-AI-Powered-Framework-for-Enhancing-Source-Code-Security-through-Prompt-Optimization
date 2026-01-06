@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhance & Analyze - AI-Powered Security Framework</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <!-- Include only the main JavaScript -->
+  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="container">
+        <header>
+            <h1>AI-Powered Security Framework</h1>
+            <p class="sub-header">Prompt Enhancing & Secure Code Generation powered by AI</p>
+        </header>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/enhance" class="active">Enhance & Analyze</a></li>
+      <li><a href="/reports">Reports</a></li>
+      <li><a href="/aboutus">About us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Section -->
+<div class="hero-enhancment">
+    <h2>Generate & Analyze Your Code</h2>
+<div class="enhanment-section">
+    <div id="errorMessage" class="error-message" style="display: none;"></div>
+    <form id="enhanceForm" onsubmit="event.preventDefault(); enhanceAndAnalyze();">
+      <!-- Target Language Dropdown -->
+<div class="input-container">
+      <div class="language-selector">
+      <label for="language-select">Target Language</label>
+      <select id="language-select" name="language">
+        <option value="C">C</option>
+        <option value="Python">Python</option>
+        <option value="Java">Java</option>
+      </select>
+        </div>
+
+      <!-- Prompt Input -->
+    <div class="prompt-input">
+      <label for="prompt-Input">Code Generation Prompt</label>
+      <textarea id="promptInput" name="prompt" rows="4" placeholder="Example: Python script to sort a list of numbers using quicksort algorithm and measure execution time."></textarea>
+    </div>
+        </div>
+
+      <!-- Submit Button -->
+      <button id="enhanceButton" type="submit" class="cta-button">Generate & Analyze Code</button>
+    </form>
+  </div>
+</div>
+
+
+
+    <!-- Results Section -->
+    <!-- Enhanced Prompt -->
+    <div class="result-card">
+        <h4>Enhanced Prompt</h4>
+        <pre id="enhancedPrompt" class="result-content"></pre>
+            <div class="output-box">
+            </div>
+        </div>
+
+    <div class="results-section">
+    <!-- Generated Code -->
+    <div class="result-card generated-code">
+        <h4>Generated Code </h4>
+            <pre id="generatedCode" class="result-content"></pre>          
+            <div class="output-box">
+          </div>
+    </div>
+
+
+        <div class="result-card security-analysis">
+            <h4>Security Analysis Report</h4>
+            <div id="analysisResults" class="result-content"></div>
+            </div>
+                <div class="action-buttons">
+                    <button id="viewReport" onclick="viewReportInBrowser()" style="display: none;">
+                        View Report
+                    </button>
+                    <button id="downloadReport" onclick="downloadReport()" style="display: none;">
+                        Download Report
+                    </button>
+                    </div>
+    </div>
+
+        <!-- Language Badge -->
+      <div id="languageBadge" class="language-badge" style="display: none;"></div>
+    </div>
+    </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 AI-Powered Security Framework | Created by Kady Alsaif, Shatha Alharbi, Shahad Alqahtani</p>
+  </footer>
+</body>
+</html>
