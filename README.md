@@ -1,4 +1,4 @@
-#  AI-Powered Framework for Enhancing Open-Source Software Security through Prompt Optimization and Vulnerability Detection
+# AI-Powered Framework for Enhancing Open-Source Software Security through Prompt Optimization and Vulnerability Detection
 is an open-source, proactive security framework that enhances source code safety in AI-generated code by integrating intelligent prompt engineering with automated vulnerability analysis. Unlike reactive security tools that scan code after generation, guides Large Language Models (LLMs) to produce secure code from the outset while preserving developer productivity.
 
 Built with a modular Flask architecture and leveraging local AI processing via Ollama,  ensures complete data privacy by keeping all code and analysis within the user's environment—no data leaves your machine.
